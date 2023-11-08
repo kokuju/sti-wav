@@ -1,0 +1,5 @@
+Bootstrap: docker
+From: python:2.7.18
+
+%post
+    pip install --no-cache-dir numpy scipy matplotlib
