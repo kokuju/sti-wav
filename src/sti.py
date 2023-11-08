@@ -178,7 +178,7 @@ def octaveBandFilter(audio, hz,
     nyquist = hz * 0.5
 
     # length of Hamming window for FIR low-pass at 25 Hz
-    hammingLength = (hammingTime / 1000.0) * hz
+    hammingLength = int((hammingTime / 1000.0) * hz)
 
     # process each octave band
     for f in octaveBands:
